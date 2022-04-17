@@ -16,9 +16,9 @@ return new class extends Migration
         // table pivot 
 
         Schema::create('ingredient_recipe', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('ingredient_id');
-            $table->unsignedBigInteger('recipe_id');
+            
+           // $table->unsignedBigInteger('ingredient_id');
+           // $table->unsignedBigInteger('recipe_id');
             
             $table->unsignedBigInteger('ingredient_id');
             $table->foreign('ingredient_id')->references('id')->on('ingredients');
