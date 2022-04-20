@@ -15,6 +15,7 @@ class Recipe extends Model
     {
 
         return $this->belongsTo(User::class);
+        // une recette appartient a un user
  
     }
 
